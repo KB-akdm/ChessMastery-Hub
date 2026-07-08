@@ -1,0 +1,105 @@
+.box {
+    background-color: cornflowerblue;
+}
+nav {
+    background-color: #D5D5C1;
+}
+.h {
+    font-size: 80px;
+    color: white;
+    font-weight: 100;
+}
+.courses {
+    text-align: center;
+    padding: 15px;
+    background-color: #D5D5C1;
+}
+.magnifier {
+    margin-top: 15px;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+}
+.skill{
+    text-align: center;
+    background-color: #D5D5C1;
+    padding: 20px;
+    
+
+}
+.ts {
+    
+              border-radius: 20px;
+              background-color: rgb(179, 149, 114);
+              padding: 15px;
+            margin: 10px 15px;
+            
+}
+.topic{
+    text-align: center;
+    background-color: #D5D5C1;
+    padding: 20px;
+  
+
+}
+.wow  {
+    
+              border-radius: 20px;
+              background-color: rgb(129, 126, 122);
+              padding: 15px;
+            margin: 10px 15px;
+            
+}
+.why {
+    text-align: center;
+    background-color: #D5D5C1;
+    padding: 20px;
+    
+
+}
+.yy  {
+    
+              border-radius: 20px;
+              background-color: #47617b;
+              padding: 15px;
+            margin: 10px 15px;
+            color:lightgray;
+            
+}
+.students {
+    text-align: center;
+    background-color: #D5D5C1;
+    padding: 20px;
+    
+
+}
+.st  {
+    
+              border-radius: 20px;
+              background-color: #c89808;
+              padding: 15px;
+            margin: 10px 15px;
+            
+}
+.testimonial-image{
+    border-radius: 50%;
+    width: 100px;
+}
+.end {
+    background-color: #47617b;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.foot{
+    text-align: center;
+    background-color: #D5D5C1;
+    padding: 30px;
+    color: #47617b;
+}
+.ftlink {
+    color: #47617b;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}

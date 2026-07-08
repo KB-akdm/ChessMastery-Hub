@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - ChessMastery Hub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+        .content-section {
+            margin-bottom: 2rem;
+        }
+        .content-section h2 {
+            color: #ffc107;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+        .content-section p, .content-section li {
+            line-height: 1.8;
+            color: #f0f0f0;
+        }
+        .content-container {
+            background-color: #47617b;
+            padding: 3rem 2rem;
+            min-height: 100vh;
+        }
+        .faq-item {
+            background-color: rgba(255, 193, 7, 0.1);
+            border-left: 4px solid #ffc107;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 15px 0;
+            color: #f0f0f0;
+        }
+        .faq-item h3 {
+            color: #ffc107;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .faq-item h3:hover {
+            text-decoration: underline;
+        }
+        .faq-answer {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid rgba(255, 193, 7, 0.3);
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">♟️ ChessMastery Hub</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                <form class="d-flex" role="search">
+                    <a href="index.html" class="btn btn-outline-dark me-3">Home</a>
+                    <a href="signINnUP.html"><button class="btn btn-warning me-2" type="button">Sign In</button></a>
+                    <a href="signINnUP.html?mode=signup"><button class="btn btn-warning me-3" type="button">Sign Up</button></a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="container-fluid p-5" style="background-color: #47617b; color: white">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="h">Frequently Asked Questions</h1>
+                <p style="font-size: 20px; margin-top: 15px;">Find answers to common questions about our courses and platform</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Content -->
+    <div class="content-container">
+        <div class="container">
+            <div class="content-section">
+                <h2>About ChessMastery Hub</h2>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ What is ChessMastery Hub?</h3>
+                <div class="faq-answer">
+                    <p>ChessMastery Hub is an online learning platform dedicated to teaching chess at all levels. We offer courses from beginner to advanced levels, led by experienced chess instructors and grandmasters. Our mission is to make quality chess education accessible to everyone.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Who can join ChessMastery Hub?</h3>
+                <div class="faq-answer">
+                    <p>Anyone with an interest in chess can join! Our courses are designed for all age groups and skill levels. Whether you're a complete beginner or an experienced player looking to improve, we have courses tailored to your needs. Children under 13 require parental consent.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Do I need to have chess experience to start?</h3>
+                <div class="faq-answer">
+                    <p>No! Our Beginner courses start from the very basics and teach you everything you need to know about how to play chess. Even if you've never played before, you'll be able to follow along and learn at your own pace.</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 3rem;">
+                <h2>Courses & Learning</h2>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ How long do the courses take?</h3>
+                <div class="faq-answer">
+                    <p>Course lengths vary depending on the content and your learning pace. Beginner courses typically range from 4-12 hours, while advanced courses can be longer. Since all courses are self-paced, you can complete them in your own time.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Can I access courses on mobile devices?</h3>
+                <div class="faq-answer">
+                    <p>Yes! Our platform is fully responsive and works on smartphones, tablets, and desktop computers. You can access your courses anytime, anywhere, and on any device.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Do you offer certificates upon completion?</h3>
+                <div class="faq-answer">
+                    <p>Yes! Upon completing a course, you'll receive a certificate of completion that you can download and share. These certificates reflect the time and effort you've invested in improving your chess skills.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Can I download course materials?</h3>
+                <div class="faq-answer">
+                    <p>Yes, most courses include downloadable resources such as PDFs with opening theory, endgame tables, and practice problems. These materials are available to all enrolled students.</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 3rem;">
+                <h2>Pricing & Subscriptions</h2>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ How much do courses cost?</h3>
+                <div class="faq-answer">
+                    <p>Course prices vary based on content and instructor experience, typically ranging from $29.99 to $99.99. We also offer bundle deals and seasonal discounts. Check our course pages for current pricing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Is there a free trial available?</h3>
+                <div class="faq-answer">
+                    <p>Yes! We offer a 7-day free trial for new users. This allows you to explore our platform, preview courses, and decide if it's right for you before making any purchase.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ What is your refund policy?</h3>
+                <div class="faq-answer">
+                    <p>We offer a 30-day money-back guarantee if you're not satisfied with a course. Simply contact our support team, and we'll process your refund promptly.</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 3rem;">
+                <h2>Account & Technical</h2>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ How do I create an account?</h3>
+                <div class="faq-answer">
+                    <p>Creating an account is simple! Click the "Sign Up" button on our website, enter your email address and password, and you're ready to go. You can then complete your profile and start enrolling in courses.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ How do I reset my password?</h3>
+                <div class="faq-answer">
+                    <p>If you forget your password, click "Forgot Password" on the Sign In page. Enter your email address, and we'll send you a link to reset your password securely.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Is my personal data safe on ChessMastery Hub?</h3>
+                <div class="faq-answer">
+                    <p>Absolutely! We take your privacy and security very seriously. All data is encrypted and stored securely. For more information, please review our <a href="privacy.html" style="color: #ffc107; text-decoration: underline;">Privacy Policy</a>.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Can I delete my account?</h3>
+                <div class="faq-answer">
+                    <p>Yes, you can delete your account anytime. Simply go to your account settings and select "Delete Account." Please note that this action is permanent and cannot be undone. Contact us if you need assistance.</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 3rem;">
+                <h2>Support & Community</h2>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ What if I have a technical issue?</h3>
+                <div class="faq-answer">
+                    <p>If you encounter any technical problems, please <a href="contact.html" style="color: #ffc107; text-decoration: underline;">contact our support team</a>. We'll do our best to resolve your issue quickly. Try clearing your browser cache and refreshing the page first, as this often solves common issues.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Is there a community forum?</h3>
+                <div class="faq-answer">
+                    <p>Yes! Our platform includes a vibrant community where you can connect with other chess learners, ask questions, share your progress, and discuss strategies. This is a great way to stay motivated and learn from others.</p>
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <h3>❓ Can I get personalized coaching?</h3>
+                <div class="faq-answer">
+                    <p>We offer optional 1-on-1 coaching sessions with our instructors for an additional fee. These personalized sessions allow you to get tailored feedback and guidance based on your specific needs and goals.</p>
+                </div>
+            </div>
+
+            <div class="content-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid #ddd;">
+                <p style="color: #ffc107; font-style: italic;">
+                    <strong>Still have questions? <a href="contact.html" style="color: #ffc107; text-decoration: underline;">Contact us</a> and our team will be happy to help!</strong>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="foot">
+      <a class="ftlink" href="aboutus.html">About Us</a>
+      <a class="ftlink" href="contact.html">Contact</a>
+      <a class="ftlink" href="faq.html">FAQ</a>
+      <a class="ftlink" href="privacy.html">Privacy Policy</a>
+      <p class="mt-4">© ChessMastery Hub, All right reserved.</p>
+    </footer>
+
+    <script>
+        function toggleFAQ(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
